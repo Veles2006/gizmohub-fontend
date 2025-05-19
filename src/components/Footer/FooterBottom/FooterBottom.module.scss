@@ -1,0 +1,37 @@
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.1rem;
+
+    & p {
+        margin-top: 0;
+    }
+}
+
+.ship-and-payment {
+    display: flex;
+    gap: 4.8rem;
+}
+
+.ship, .payment {
+    display: flex;
+    align-items: center;
+
+    & img + img {
+        margin-left: 6px;
+    }
+}
+
+.ship-content,
+.payment-content {
+    padding-left: 8px;
+}
+
+.copyright-content a {
+    color: var(--color-text);
+    transition: color .3s ease;
+
+    &:hover {
+        color: var(--primary-orange);
+    }
+}

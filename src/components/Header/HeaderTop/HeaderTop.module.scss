@@ -1,0 +1,47 @@
+.header-top {
+    border-bottom: 1.2px solid var(--border-color);
+}
+
+.header-top-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.header-top-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 1.6rem;
+    padding: 8px 0;
+}
+
+.header-top-item + .header-top-item {
+    border-left: 1.2px solid var(--border-color);
+}
+
+.header-top-item--shop-link {
+    a {
+        text-decoration: underline;
+        color: var(--text-color);
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--primary-orange);
+    }
+}
+
+.header-top-item--phone-number {
+    a {
+        color: var(--text-color);
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: var(--primary-orange);
+    }
+}
