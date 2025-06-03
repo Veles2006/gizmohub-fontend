@@ -1,12 +1,18 @@
 :root {
     /* Color Palette */
+    --color-white: #fff;
+    --color-black: #272727;
     --color-primary: #0d47a1; /* Xanh navy */
     --color-accent: #64b5f6; /* Xanh dương sáng */
     --color-success: #00e676; /* Xanh neon */
     --color-bg: #f5f5f5; /* Nền sáng */
     --color-text: #212121; /* Văn bản chính */
-    --primary-orange: #F7941E;
-    --border-color: #E0E0E0;
+    --color-text-gray: #333;
+    --gray-color-300: #E0E0E0;
+    --gray-color-500: #D0D0D0;
+    --gray-color-800: #3A3A3A;
+    --primary-orange: #ff6543;
+    --border-color: #d8d8d8;
     --icon-music-gray: #9E9E9E;
 
     /* Font family */

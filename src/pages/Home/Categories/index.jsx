@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 
 function Categories({ categories = [] }) {
     return <div className={cx('categories-page')}>
-        <div className={cx('categories-title')}>
+        <div className={cx('grid', 'wide', 'categories-title')}>
             <h3>
                 Categories
             </h3>
@@ -14,7 +14,7 @@ function Categories({ categories = [] }) {
         <div className={cx('grid', 'wide')}>
             <div className={cx('row')}>
                 {categories.map((category, index) => (
-                    <div className={cx('l-3')}>
+                    <div className={cx('l-2', 'card-wrapper')}>
                         <div className={cx('card')}>
                             <Link to={'#'}>
                                 <img src={category.img} />

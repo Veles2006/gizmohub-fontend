@@ -11,19 +11,19 @@ const data = {
             header: 'GoPro hero9 Black',
             description: 'Limited stocks available. Grab it now!',
             button: 'Shop Collection',
-            image: 'https://demo.templatesjungle.com/shoplite/images/banner-image.png',
+            image: '/images/banner-image-1.png',
         },
         {
             header: 'Iphone 15 Pro Max',
             description: 'Discount available. Grab it now!',
             button: 'Shop Product',
-            image: 'https://demo.templatesjungle.com/shoplite/images/banner-image1.png',
+            image: '/images/banner-image-2.png',
         },
         {
             header: 'Macbook Collection',
             description: 'Limited stocks available. Grab it now!',
             button: 'Shop Collection',
-            image: 'https://demo.templatesjungle.com/shoplite/images/banner-image2.png',
+            image: '/images/banner-image-3.png',
         },
     ],
 
@@ -248,6 +248,51 @@ const data = {
             stars: 5,
             user: 'Roman',
         },
+    ],
+    latestPosts: [
+        {
+            flag: 'Gadgets',
+            title: '5 Must-Have Gadgets for the Modern Home',
+            paragraph:
+                'Dive into the world of cutting-edge technology with our latest blog post, where we highlight five essential gadg',
+            image: 'https://demo.templatesjungle.com/shoplite/images/post-item1.jpg',
+        },
+        {
+            flag: 'Phones',
+            title: 'Eco-Friendly Innovations Making a Difference',
+            paragraph:
+                'Explore the intersection of technology and sustainability in our latest blog post. Learn about the innovative',
+            image: 'https://demo.templatesjungle.com/shoplite/images/post-item2.jpg',
+        },
+        {
+            flag: 'Tech',
+            title: 'The Future of Wearable Tech: Trends to Watch',
+            paragraph:
+                'Stay ahead of the curve with our insightful look into the rapidly evolving landscape of wearable technology.',
+            image: 'https://demo.templatesjungle.com/shoplite/images/post-item3.jpg',
+        },
+        {
+            flag: 'Digital Watch',
+            title: 'Top Apps and Tools for Remote Work',
+            paragraph:
+                "In today's remote work environment, productivity is key. Discover the top apps and tools that can help you stay",
+            image: 'https://demo.templatesjungle.com/shoplite/images/post-item4.jpg',
+        },
+    ],
+    brands: [
+        'https://demo.templatesjungle.com/shoplite/images/brand1.png',
+        'https://demo.templatesjungle.com/shoplite/images/brand2.png',
+        'https://demo.templatesjungle.com/shoplite/images/brand3.png',
+        'https://demo.templatesjungle.com/shoplite/images/brand4.png',
+        'https://demo.templatesjungle.com/shoplite/images/brand5.png',
+    ],
+    instagram: [
+        'https://demo.templatesjungle.com/shoplite/images/insta-item1.jpg',
+        'https://demo.templatesjungle.com/shoplite/images/insta-item2.jpg',
+        'https://demo.templatesjungle.com/shoplite/images/insta-item3.jpg',
+        'https://demo.templatesjungle.com/shoplite/images/insta-item4.jpg',
+        'https://demo.templatesjungle.com/shoplite/images/insta-item5.jpg',
+        'https://demo.templatesjungle.com/shoplite/images/insta-item6.jpg',
     ],
 };
 

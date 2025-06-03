@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import classNames from 'classnames/bind';
 import styles from './CustomersReviews.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -27,8 +29,16 @@ function CustomersReviews({ reviews = [] }) {
                 <Slider {...settings}>
                     {reviews.map((review, idx) => (
                         <div key={idx}>
-                            <div className={cx('card')}>
+                            <div className={cx('review-box')}>
                                 <blockquote>{review.comment}</blockquote>
+                                <div className={cx('review-stars')}>
+                                    {Array.from({ length: review.stars}).map((_, i) => (
+                                        <span key={i}><FontAwesomeIcon icon={faStar} /></span>
+                                    )) }
+                                </div>
+                                <span className={cx('review-author')}>
+                                    {review.user}
+                                </span>
                             </div>
                         </div>
                     ))}

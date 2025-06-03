@@ -7,6 +7,9 @@ import LimitedOffer from "./LimitedOffer";
 import ItemsListing from "./ItemsListing";
 import data from './homeData'
 import CustomersReviews from "./CustomersReviews";
+import LatestpPosts from "./LatestpPosts";
+import Brands from "./Brands";
+import Instagram from "./Instagram";
 
 
 function Home() {
@@ -18,6 +21,9 @@ function Home() {
         <section id="limited-offer"><LimitedOffer /></section>
         <section id="items-listing"><ItemsListing itemsListing={data.itemsListing} /></section>
         <section id="customers-reviews"><CustomersReviews reviews={data.customersReviews} /></section>
+        <section id="latest-posts"><LatestpPosts latestpPosts={data.latestPosts} /></section>
+        <section id="brands"><Brands brands={data.brands} /></section>
+        <section id="instagram"><Instagram images={data.instagram} /></section>
     </div>);
 }
 
