@@ -1,0 +1,21 @@
+.prev-arrow {
+    position: absolute;
+    top: 50%;
+    background: #999;
+    & svg {
+        font-size: 24px;
+        color: red;
+    }
+}
+
+.arrow-left {
+    display: block;
+    left: 0;
+    z-index: 1;
+}
+
+.arrow-right {
+    display: block;
+    right: 0;
+    z-index: 1;
+}
