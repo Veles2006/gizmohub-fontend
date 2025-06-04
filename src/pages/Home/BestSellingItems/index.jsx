@@ -12,8 +12,6 @@ import { useState } from 'react';
 const cx = classNames.bind(styles);
 
 function BestSellingItems({ bestSellingItems = [] }) {
-    const [hoveredIndex, setHoveredIndex] = useState(-1);
-
     const settings = {
         infinite: true,
         speed: 500,
@@ -36,34 +34,32 @@ function BestSellingItems({ bestSellingItems = [] }) {
                         style={{ height: '100%' }}
                     >
                         {bestSellingItems.map((item, idx) => (
-                            <div key={idx} className={cx('card-wrapper')}
-                                    onMouseEnter={() => setHoveredIndex(idx)}
-                                    onMouseLeave={() => setHoveredIndex(-1)}>
-                                <div
-                                    className={cx('card')}
-                                >
-                                    <Link to={'#'}>
+                            <div key={idx} className={cx('card-wrapper')}>
+                                <div className={cx('card-wrapper__child')}>
+                                    <div className={cx('card')}>
                                         <img src={item.img} />
-                                    </Link>
 
-                                    <h5 className={cx('card__title')}>
-                                        <Link to={'#'}>{item.title}</Link>
-                                    </h5>
-                                    <span>{item.price}</span>
-                                </div>
-                                <div className={cx('card-concern')} style={{ display: `${hoveredIndex === idx ? 'flex' : 'none'}` }}>
-                                    <Link to={'#'} className={cx('btn')}>
-                                        <span>
-                                            <FontAwesomeIcon
-                                                icon={faCartShopping}
-                                            />
-                                        </span>
-                                    </Link>
-                                    <Link to={'#'} className={cx('btn')}>
-                                        <span>
-                                            <FontAwesomeIcon icon={faHeart} />
-                                        </span>
-                                    </Link>
+                                        <h5 className={cx('card__title')}>
+                                            <Link to={'#'}>{item.title}</Link>
+                                        </h5>
+                                        <span>{item.price}</span>
+                                    </div>
+                                    <div className={cx('card-concern')}>
+                                        <Link to={'#'} className={cx('btn')}>
+                                            <span>
+                                                <FontAwesomeIcon
+                                                    icon={faCartShopping}
+                                                />
+                                            </span>
+                                        </Link>
+                                        <Link to={'#'} className={cx('btn')}>
+                                            <span>
+                                                <FontAwesomeIcon
+                                                    icon={faHeart}
+                                                />
+                                            </span>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         ))}
