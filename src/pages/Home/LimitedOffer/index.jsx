@@ -14,30 +14,30 @@ function LimitedOffer() {
                     </div>
                 </div>
                 <div className={cx('l-6')}>
-                    <div>
-                        <h2>30% Discount on apple collection</h2>
-                        <div id="countdown-clock">
-                            <div className={cx('time')}>
+                    <div className={cx('limited-offer-content')}>
+                        <h2 className={cx('limited-offer-title')}>30% Discount on apple collection</h2>
+                        <div id="countdown-clock" className={cx('countdown-clock')}>
+                            <div className={cx('time', 'pe-3')}>
                                 <span>27</span>
                                 <small>Days</small>
                             </div>
-                            <span>:</span>
-                            <div className={cx('time')}>
+                            <span className={cx('time-space')}>:</span>
+                            <div className={cx('time', 'pe-3', 'ps-3')}>
                                 <span>27</span>
-                                <small>Days</small>
+                                <small>Hrs</small>
                             </div>
-                            <span>:</span>
-                            <div className={cx('time')}>
+                            <span className={cx('time-space')}>:</span>
+                            <div className={cx('time', 'pe-3', 'ps-3')}>
                                 <span>27</span>
-                                <small>Days</small>
+                                <small>Min</small>
                             </div>
-                            <span>:</span>
-                            <div className={cx('time')}>
+                            <span className={cx('time-space')}>:</span>
+                            <div className={cx('time', 'ps-3')}>
                                 <span>27</span>
-                                <small>Days</small>
+                                <small>Sec</small>
                             </div>
                         </div>
-                        <Link to={'#'} className={cx('btn')}>Shop Collection</Link>
+                        <Link to={'#'} className={cx('button-primary', 'limited-offer-btn')}>Shop Collection</Link>
                     </div>
                 </div>
             </div>

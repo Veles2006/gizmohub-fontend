@@ -32,7 +32,7 @@ export default function ImageCarousel({ values = [] }) {
                                     <div className={cx('banner-content')}>
                                         <h2>{value.header}</h2>
                                         <p>{value.description}</p>
-                                        <Link to={'#'}>{value.button}</Link>
+                                        <Link to={'#'} className={cx('button-primary')}>{value.button}</Link>
                                     </div>
                                 </div>
                                 <div className={cx('l-5', 'banner-image-wrapper')}>
