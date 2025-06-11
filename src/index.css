@@ -21,6 +21,10 @@
         'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: var(--font-sans);
@@ -32,7 +36,6 @@ body {
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 h1,

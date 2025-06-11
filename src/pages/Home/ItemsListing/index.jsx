@@ -9,8 +9,8 @@ function ItemsListing({ itemsListing = [] }) {
         <div className={cx('grid', 'wide')}>
             <div className={cx('row')}>
                 {itemsListing.map((item, idx) => (
-                    <div className={cx('l-3')}>
-                        <div>
+                    <div className={cx('col', 'l-3')}>
+                        <div className={cx('item-wrapper')}>
                             <div className={cx('header')}>
                                 <h3>
                                     {item.header}
