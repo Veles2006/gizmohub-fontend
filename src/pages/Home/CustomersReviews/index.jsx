@@ -11,7 +11,6 @@ const cx = classNames.bind(styles);
 
 function CustomersReviews({ reviews = [] }) {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
@@ -22,27 +21,31 @@ function CustomersReviews({ reviews = [] }) {
     };
     return (
         <div className={cx('customers-reviews')}>
-            <div className={cx('customers-reviews-title')}>
-                <h3>Customers reviews</h3>
-            </div>
-            <div className={cx('review-carousel')}>
-                <Slider {...settings}>
-                    {reviews.map((review, idx) => (
-                        <div key={idx}>
-                            <div className={cx('review-box')}>
-                                <blockquote>{review.comment}</blockquote>
-                                <div className={cx('review-stars')}>
-                                    {Array.from({ length: review.stars}).map((_, i) => (
-                                        <span key={i}><FontAwesomeIcon icon={faStar} /></span>
-                                    )) }
+            <div className={cx('grid', 'wide')}>
+                <div className={cx('customers-reviews-title')}>
+                    <h3>Customers reviews</h3>
+                </div>
+                <div className={cx('review-carousel')}>
+                    <Slider className={cx('my-slick-slider')} {...settings}>
+                        {reviews.map((review, idx) => (
+                            <div key={idx}>
+                                <div className={cx('review-box-wrapper')}>
+                                    <div className={cx('review-box')}>
+                                        <blockquote>{review.comment}</blockquote>
+                                        <div className={cx('review-stars')}>
+                                            {Array.from({ length: review.stars}).map((_, i) => (
+                                                <span key={i}><FontAwesomeIcon icon={faStar} /></span>
+                                            )) }
+                                        </div>
+                                        <span className={cx('review-author')}>
+                                            {review.user}
+                                        </span>
+                                    </div>
                                 </div>
-                                <span className={cx('review-author')}>
-                                    {review.user}
-                                </span>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );

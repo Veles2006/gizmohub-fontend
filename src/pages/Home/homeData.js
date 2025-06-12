@@ -152,7 +152,7 @@ const data = {
             ],
         },
         {
-            header: 'Featured',
+            header: 'Latest items',
             products: [
                 {
                     title: 'Wireless headset',
@@ -172,7 +172,7 @@ const data = {
             ],
         },
         {
-            header: 'Featured',
+            header: 'Best reviewed',
             products: [
                 {
                     title: 'Wireless headset',
@@ -192,21 +192,24 @@ const data = {
             ],
         },
         {
-            header: 'Featured',
+            header: 'On sale',
             products: [
                 {
                     title: 'Wireless headset',
                     price: '$500',
+                    sale: '$400',
                     img: 'https://demo.templatesjungle.com/shoplite/images/item-image1.jpg',
                 },
                 {
                     title: 'Wireless headset',
                     price: '$500',
+                    sale: '$400',
                     img: 'https://demo.templatesjungle.com/shoplite/images/item-image1.jpg',
                 },
                 {
                     title: 'Wireless headset',
                     price: '$500',
+                    sale: '$400',
                     img: 'https://demo.templatesjungle.com/shoplite/images/item-image1.jpg',
                 },
             ],
