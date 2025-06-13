@@ -1,0 +1,93 @@
+.latest-posts {
+    padding: 147px 0;
+}
+
+.latest-posts-title {
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    & h3 {
+        width: max-content;
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+
+        color: var(--color-text);
+
+        &::after {
+            content: '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////';
+            font-size: 19px;
+            color: var(--gray-color-500);
+            letter-spacing: 0.18rem;
+            margin-left: 16px;
+        }
+    }
+}
+
+.post {
+    padding-right: 16px;
+    margin-bottom: 24px;
+}
+
+.post-btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 2.4rem;
+    letter-spacing: 0.144rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--primary-orange);
+    padding: 0 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+    &:hover {
+        background-color: var(--color-black);
+    }
+}
+
+.post-img {
+    & img {
+        max-width: 100%;
+    }
+}
+
+.post-content__title {
+    font-size: 2.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.132rem;
+    line-height: 115%;
+    margin: 16px 0 8px;
+
+    & a {
+        color: var(--black-color);
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--primary-orange);
+        }
+    }
+}
+
+.post-content__paragraph {
+    font-size: 2.1rem;
+    font-weight: 200;
+    margin: 0 0 8px;
+}
+
+.post-content__read-more {
+    color: var(--black-color);
+    font-size: 2.1rem;
+    font-weight: 200;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--primary-orange);
+    }
+}

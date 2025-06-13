@@ -1,0 +1,26 @@
+.brands {
+    padding: 72px 0;
+    border: 1px solid var(--gray-color-200);
+}
+
+.brands-list {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.brand-item {
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}

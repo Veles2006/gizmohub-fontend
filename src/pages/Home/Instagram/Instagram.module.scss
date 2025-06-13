@@ -1,0 +1,40 @@
+.instagram-page {
+    padding: 147px 0;
+}
+
+.instagram-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h3 {
+        color: var(--color-black);
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 200;
+        line-height: 115%;
+        margin: 0 0 24px;
+    }
+}
+
+.instagram-item {
+    position: relative;
+    margin: 0;
+
+    & img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.instagram {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    color: var(--light-color);
+    // opacity: 0;
+    transition: 0.9s ease-out;
+}
