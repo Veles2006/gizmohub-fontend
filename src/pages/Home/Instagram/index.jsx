@@ -18,12 +18,11 @@ function Instagram({ images = [] }) {
                         <div className={cx('col', 'l-2')} key={idx}>
                             <figure className={cx('instagram-item')}>
                                 <Link to={'#'}>
-                                    
                                     <img src={image} alt="" />
-                                </Link>
-                                <div className={cx('instagram')}>
+                                    <div className={cx('instagram')}>
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </div>
+                                </Link>
                             </figure>
                         </div>
                     ))}
