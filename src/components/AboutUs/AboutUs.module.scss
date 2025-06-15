@@ -1,0 +1,65 @@
+.about-us {
+    padding-bottom: 147px;
+}
+
+.image-wrapper {
+    padding: 0 16px;
+}
+
+.image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    & img {
+        max-width: 100%;
+    }
+}
+
+.image-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 48px;
+    border: 2px solid var(--color-black);
+    border-radius: 50%;
+    cursor: pointer;
+    
+    & svg {
+        width: 40px;
+        font-size: 4rem;
+        transition: color 0.3s ease;
+    }
+
+    &:hover svg {
+        color: var(--primary-orange);
+    }
+}
+
+.content {
+    padding-left: 48px;
+    margin-top: 48px;
+
+    & p {
+        color: var(--color-black);
+        font-size: 2.1rem;
+        font-weight: 200;
+        letter-spacing: 0.016rem;
+        line-height: normal;
+    }
+}
+
+.pb-1 {
+    padding-bottom: 0.4rem !important;
+}
+
+.content-title {
+    color: initial;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    font-weight: 200;
+    line-height: 115%;
+    margin: 0 0 16px;
+}

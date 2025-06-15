@@ -76,10 +76,10 @@
     }
 }
 
-.btn-hover:hover {
-    a,
-    span,
-    svg {
+.btn-hover {
+    & a:hover,
+    & span:hover,
+    & svg:hover {
         cursor: pointer;
         transition: color 0.3s ease;
         color: var(--primary-orange);

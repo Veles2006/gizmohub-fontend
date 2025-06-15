@@ -1,0 +1,37 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    padding: 84px 0;
+}
+
+.hero-section-title {
+    color: initial;
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.36rem;
+    font-weight: 200;
+    line-height: 115%;
+    margin: 0 0 8px;
+}
+
+.item {
+    font-size: 2.1rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    
+    & a {
+        color: var(--color-black);
+        transition: color 0.3s ease;
+    }
+
+    & a:hover {
+        color: var(--primary-orange);
+    }
+}
+
+.item--text-decoration-underline {
+    text-decoration: underline;
+}
