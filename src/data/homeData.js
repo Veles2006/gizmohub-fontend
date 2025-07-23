@@ -128,6 +128,16 @@ const data = {
             price: '$1200',
             img: 'https://demo.templatesjungle.com/shoplite/images/product-item10.png',
         },
+        {
+            title: 'Iphone 13 Pro',
+            price: '$1200',
+            img: 'https://demo.templatesjungle.com/shoplite/images/product-item11.png',
+        },
+        {
+            title: 'Digital Watch',
+            price: '$860',
+            img: 'https://demo.templatesjungle.com/shoplite/images/product-item12.png',
+        },
     ],
 
     itemsListing: [

@@ -10,36 +10,17 @@ import Brands from '../../components/Brands';
 import Instagram from '../../components/Instagram';
 import HeroSection from '../../components/HeroSection';
 import AboutUs from '../../components/AboutUs';
+import BlogElement from './BlogElement';
 
-function About() {
+function Blog() {
     return (
         <div>
             <section id="hero-section">
-                <HeroSection pageName="about us" />
+                <HeroSection pageName="blog us" />
             </section>
-            <section id="company-services">
-                <CompanyServices companyServices={data.companyServices} />
-            </section>
-            <section id="about-us">
-                <AboutUs />
-            </section>
-            <section id="categories">
-                <Categories categories={data.categories} />
-            </section>
-            <section id="best-selling-items">
-                <BestSellingItems bestSellingItems={data.bestSellingItems} />
-            </section>
-            <section id="limited-offer">
-                <LimitedOffer />
-            </section>
-            <section id="items-listing">
-                <ItemsListing itemsListing={data.itemsListing} />
-            </section>
+            <BlogElement />
             <section id="customers-reviews">
                 <CustomersReviews reviews={data.customersReviews} />
-            </section>
-            <section id="latest-posts">
-                <LatestpPosts latestpPosts={data.latestPosts} />
             </section>
             <section id="brands">
                 <Brands brands={data.brands} />
@@ -51,4 +32,4 @@ function About() {
     );
 }
 
-export default About;
+export default Blog;

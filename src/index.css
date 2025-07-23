@@ -29,6 +29,8 @@
 }
 
 body {
+    font-size: 2.1rem;
+    font-weight: 200;
     margin: 0;
     font-family: var(--font-sans);
     color: var(--color-text);

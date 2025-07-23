@@ -18,7 +18,7 @@ const barValueOrigin = [
     { value: 'HOME', link: '/' },
     { value: 'ABOUT', link: '/about' },
     { value: 'SHOP', link: '/shop' },
-    { value: 'BLOGS', link: '/blogs' },
+    { value: 'BLOGS', link: '/blog' },
     { value: 'PAGES', link: '/pages' },
     { value: 'CONTACT', link: '/contact' },
 ];
